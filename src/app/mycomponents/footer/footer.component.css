@@ -1,0 +1,11 @@
+.footer
+{
+    
+    background-color:black;
+    color: whitesmoke;
+    position:-webkit-sticky;
+    width: 100%;
+    margin-top: 100px;
+    
+    bottom: 0;
+}

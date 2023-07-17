@@ -1,0 +1,59 @@
+#logo
+{
+    text-align: center;
+    border-radius: 100%;
+    width: 20%;
+    height: 20%;
+}
+p{
+    color:silver;
+    font-size: 20px;
+}
+.landing
+{
+  color:aliceblue;
+  margin-top: 180px;
+  margin-bottom: 400px;
+}
+
+#quote
+{
+  font-size:60px;
+}
+#img1
+{
+  width: 50%;
+  height:50%;
+}
+#img2
+{
+  width: 100%;
+  height:50%;
+}
+.phrase
+{
+ 
+  color: aliceblue;
+  font-size: 40px;
+  border:5px solid aliceblue;
+  border-radius: 20px;
+  text-align: center;
+ 
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#quote {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+ 
+  
+}

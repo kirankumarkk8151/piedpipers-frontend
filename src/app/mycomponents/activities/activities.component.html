@@ -1,0 +1,96 @@
+<header>
+    <!-- Intro settings -->
+    <style>
+      #intro {
+        /* Margin to fix overlapping fixed navbar */
+        margin-top: 58px;
+      }
+      @media (max-width: 991px) {
+        #intro {
+          /* Margin to fix overlapping fixed navbar */
+          margin-top: 45px;
+        }
+      }
+    </style>
+
+  
+
+    
+
+  <!--Main layout-->
+  <h1 class="container my-3" style="color:silver">Events Happened</h1>
+  <main class="my-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        
+<div *ngFor="let event of eventshappened">
+        <div class="row">
+          <div class="row-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/images/eureka7.jpeg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{{event.title}}</h5>
+                <p class="card-text">
+                 {{event.information}}
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+</section></div></main>
+
+
+      <!--   <div class="row-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/images/cr3.jpeg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">PiedPipers Curtain Raiser</h5>
+                <p class="card-text">
+                  The curtain raiser event for coding club – PIEDPIPERS was organized on 18th september ’22. 
+                </p>
+                <a  class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#curtainraiser">Read</a>
+              </div>
+            </div>
+            
+          </div>
+          
+
+        -->
+
+          
+<div class="upcomming container">
+
+<h2 class="my-5 container" style="color:silver">Upcomming Events:</h2>
+
+<table class="table" style="color:silver" >
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Registration Link</th>
+    </tr>
+  </thead>
+  
+ 
+<tr *ngFor="let item of events">
+
+        <td>{{ item.name }}</td>
+        <td>{{ item.information }}</td>
+        <td><a href="{{ item.register }}">{{ item.register }}</a></td>
+      </tr>
+
+</table>
+</div>
